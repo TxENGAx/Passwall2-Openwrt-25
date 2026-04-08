@@ -94,7 +94,7 @@ apk add kmod-ipt-nat
 sleep 2
 apk add ca-bundle
 sleep 1
-opkg install kmod-inet-diag
+apk add kmod-inet-diag
 sleep 1
 apk add kernel
 sleep 1
