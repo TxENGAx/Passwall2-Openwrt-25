@@ -55,7 +55,7 @@ apk upgrade
 
 ### Add Src ###
 
-wget -O apk.pub https://master.dl.sourceforge.net/project/openwrt-passwall-build/apk.pub
+wget -O apk.pub https://master.dl.sourceforge.net/project/openwrt-passwall-build/files/apk.pub
 
 apk-key add apk.pub
 
