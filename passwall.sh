@@ -51,13 +51,13 @@ fi
 
 ### Update Packages ###
 
-opkg update
+apk upgrade
 
 ### Add Src ###
 
 wget -O passwall.pub https://master.dl.sourceforge.net/project/openwrt-passwall-build/passwall.pub
 
-opkg-key add passwall.pub
+apk-key add passwall.pub
 
 >/etc/opkg/customfeeds.conf
 
@@ -70,37 +70,37 @@ done
 
 ### Install package ###
 
-opkg update
+apk upgrade
 sleep 3
-opkg remove dnsmasq
+apk remove dnsmasq
 sleep 2
-opkg install dnsmasq-full
+apk add dnsmasq-full
 sleep 3
-opkg install unzip
+apk install unzip
 sleep 2
-opkg install luci-app-passwall
+apk add luci-app-passwall
 sleep 3
-opkg install ipset
+apk add ipset
 sleep 2
-opkg install ipt2socks
+apk add ipt2socks
 sleep 2
-opkg install iptables
+apk add iptables
 sleep 2
-opkg install iptables-legacy
+apk add iptables-legacy
 sleep 2
-opkg install iptables-mod-conntrack-extra
+apk add iptables-mod-conntrack-extra
 sleep 2
-opkg install iptables-mod-iprange
+apk add iptables-mod-iprange
 sleep 2
-opkg install iptables-mod-socket
+apk add iptables-mod-socket
 sleep 2
-opkg install iptables-mod-tproxy
+apk add iptables-mod-tproxy
 sleep 2
-opkg install kmod-ipt-nat
+apk add kmod-ipt-nat
 sleep 2
-opkg install kmod-nft-socket
+apk add kmod-nft-socket
 sleep 2
-opkg install kmod-nft-tproxy
+apk add kmod-nft-tproxy
 sleep 2
 
 >/etc/banner
@@ -161,7 +161,7 @@ fi
 
 
 ####install_xray
-opkg install xray-core
+apk add xray-core
 
 ## IRAN IP BYPASS ##
 
