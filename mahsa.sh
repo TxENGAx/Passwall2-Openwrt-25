@@ -54,9 +54,9 @@ apk upgrade
 
 ### Add Src ###
 
-wget -O passwall.pub https://master.dl.sourceforge.net/project/openwrt-passwall-build/passwall.pub
+wget -O apk.pub https://master.dl.sourceforge.net/project/openwrt-passwall-build/apk.pub
 
-apk-key add passwall.pub
+apk-key add apk.pub
 
 >/etc/apk/customfeeds.conf
 
