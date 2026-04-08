@@ -64,7 +64,7 @@ read release arch << EOF
 $(. /etc/openwrt_release ; echo ${DISTRIB_RELEASE%.*} $DISTRIB_ARCH)
 EOF
 for feed in passwall_luci passwall_packages passwall2; do
-  echo "src/gz $feed https://master.dl.sourceforge.net/project/openwrt-passwall-build/releases/packages-$release/$arch/$feed" >> /etc/opkg/customfeeds.conf
+  echo "src/gz $feed https://master.dl.sourceforge.net/project/openwrt-passwall-build/releases/packages-$release/$arch/$feed" >> /etc/apk/customfeeds.conf
 done
 
 ### Install package ###
@@ -120,9 +120,9 @@ echo -e "${GREEN} Passwall.2 Installed Successfully ! ${NC}"
 fi
 
 
-DNS=`ls /usr/lib/opkg/info/dnsmasq-full.control`
+DNS=`ls /usr/lib/apk/info/dnsmasq-full.control`
 
-if [ "$DNS" == "/usr/lib/opkg/info/dnsmasq-full.control" ]; then
+if [ "$DNS" == "/usr/lib/apk/info/dnsmasq-full.control" ]; then
 
 echo -e "${GREEN} dnsmaq-full Installed successfully ! ${NC}"
 
