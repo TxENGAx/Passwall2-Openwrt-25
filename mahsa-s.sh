@@ -51,7 +51,7 @@ wget -O passwall.pub https://master.dl.sourceforge.net/project/openwrt-passwall-
 apk-key add passwall.pub
 
 
->/etc/opkg/customfeeds.conf
+>/etc/apk/customfeeds.conf
 
 read arch << EOF
 $(. /etc/openwrt_release ; echo $DISTRIB_ARCH)
