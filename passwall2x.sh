@@ -124,9 +124,9 @@ echo -e "${GREEN} Passwall.2 Installed Successfully ! ${NC}"
 fi
 
 
-DNS=`ls /usr/lib/opkg/info/dnsmasq-full.control`
+DNS=`ls /usr/lib/apk/info/dnsmasq-full.control`
 
-if [ "$DNS" == "/usr/lib/opkg/info/dnsmasq-full.control" ]; then
+if [ "$DNS" == "/usr/lib/apk/info/dnsmasq-full.control" ]; then
 
 echo -e "${GREEN} dnsmaq-full Installed successfully ! ${NC}"
 
