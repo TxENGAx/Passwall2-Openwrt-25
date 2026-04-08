@@ -104,11 +104,11 @@ rm -f passwall2x.sh && wget https://raw.githubusercontent.com/amirhosseinchoghae
         
 echo "Installing CloudFlare IP SCAN ..."
 
-opkg update
+apk upgrade
 
-opkg install bash
+apk add bash
 
-opkg install curl
+apk add curl
 
 curl -ksSL https://gitlab.com/rwkgyg/cdnopw/raw/main/cdnopw.sh -o cdnopw.sh && bash cdnopw.sh
  
@@ -119,9 +119,9 @@ curl -ksSL https://gitlab.com/rwkgyg/cdnopw/raw/main/cdnopw.sh -o cdnopw.sh && b
         
 echo "Updating Passwall v1"
 
-opkg update
+apk upgrade
 
-opkg install luci-app-passwall
+apk add luci-app-passwall
  
 ;;
 
@@ -130,9 +130,9 @@ opkg install luci-app-passwall
         
 echo "Updating Passwall v2"
 
-opkg update
+apk upgrade
 
-opkg install luci-app-passwall2
+apk add luci-app-passwall2
  
 ;;
 
